@@ -1,0 +1,12 @@
+/* leave it as it is for now */
+.nav-header {
+    display: flex;
+    height: 8.5rem;
+    /* position: absolute;
+    z-index: 100; */
+    /* width: 100vw; */
+    background-color: var(--color-white-25);
+  }
+  .nav-header h1 {
+    font-size: 2rem;
+  }
