@@ -1,10 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background: var(--color-blue-900) url('../../assets/home/background-home-desktop.jpg') no-repeat center center fixed;
-    background-size: cover;
-}
+/* home.css */
 
 /* margin-top: 418px; 128px + 292px(inner)  */
 .home-container {
@@ -105,17 +99,4 @@ body {
         font-size: clamp(1rem, min(3vh, 3vw), 1.5rem);
         text-align: center;
     }
-}
-
-@media (max-width: 53.375em) {
-    body {
-        background-image: url('../../assets/home/background-home-tablet.jpg');
-    }
-}
-
-@media (max-width: 28.125em) {
-    body {
-        background-image: url('../../assets/home/background-home-mobile.jpg');
-    }
-
 }

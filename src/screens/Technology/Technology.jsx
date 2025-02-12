@@ -1,7 +1,10 @@
-import React from 'react'
-import './technology.css'
+import React from "react";
+import "./technology.css";
+import useBackground from "../../hooks/useBackground";
+
+
 export const Technology = () => {
-  return (
-    <div>Technology</div>
-  )
-}
+  useBackground("technology");
+
+  return <div>Technology</div>;
+};

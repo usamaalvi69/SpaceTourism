@@ -1,7 +1,9 @@
-import React from 'react'
-import "./destinations.css"
+import React from "react";
+import "./destinations.css";
+import useBackground from "../../hooks/useBackground";
+
 export const Destinations = () => {
-  return (
-    <div>Destinations</div>
-  )
-}
+  useBackground("destinations");
+
+  return <div>Destinations</div>;
+};
