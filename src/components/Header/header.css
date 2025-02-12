@@ -14,8 +14,8 @@
   flex-direction: column;
   width: 85%;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: url(filters.svg#filter) blur(30px) saturate(100%);
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(1rem) ;
   transition: right 0.4s ease-in-out;
 }
 .sidebar.open {
@@ -43,7 +43,7 @@ nav {
   height:inherit;
   width: 51%;
   background-color: rgba(255, 255, 255, 0.05);
-  backdrop-filter: url(filters.svg#filter) blur(30px) saturate(100%);
+  backdrop-filter: blur(1rem) ;
 }
 .nav-text {
   font-family: var(--font-secondary);
