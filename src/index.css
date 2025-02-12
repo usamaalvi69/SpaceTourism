@@ -74,7 +74,8 @@
   --letter-spacing-8: 2px;
   --letter-spacing-9: 0px;
 
-  /* --max-width: max(100vw, 100vh); */
+  /* nav list selection border width */
+  --selected-nav-border: -3px
 
 }
 

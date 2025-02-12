@@ -44,7 +44,7 @@ body {
 
 .home-content h5 {
     font-family: var(--font-secondary);
-    font-size: clamp(1.4rem, max(6vw, 6vh), var(--font-size-5));
+    font-size: clamp(1.4rem, min(5vw, 5vh), var(--font-size-5));
     line-height: var(--line-height-5);
     letter-spacing: var(--letter-spacing-5);
     color: var(--color-blue-300);
@@ -98,7 +98,7 @@ body {
     }
 
     .home-content h5 {
-        font-size: clamp(1.4rem, max(4vw, 4vh), var(--font-size-5));
+        font-size: clamp(1.2rem, min(4vw, 4vh), var(--font-size-5));
     }
 
     .desc {
