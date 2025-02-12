@@ -1,12 +1,25 @@
 /* leave it as it is for now */
 .nav-header {
-    display: flex;
-    height: 8.5rem;
-    /* position: absolute;
-    z-index: 100; */
-    /* width: 100vw; */
-    background-color: var(--color-white-25);
-  }
-  .nav-header h1 {
-    font-size: 2rem;
-  }
+  display: flex;
+  height: 6rem;
+  margin-top: 2.5rem;
+  justify-content:space-between;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.05); */
+}
+
+nav {
+  height:inherit;
+  width: 51%;
+  /* width: 46rem; */
+  background-color: rgba(255, 255, 255, 0.05);
+  /* backdrop-filter: blur(10px); */
+  backdrop-filter: url(filters.svg#filter) blur(30px) saturate(100%);
+}
+
+.logo {
+  width: clamp(2.5rem, 10vw, 3rem);
+  height: auto;
+  max-width: 100%;
+  margin-left: 64px;
+}
