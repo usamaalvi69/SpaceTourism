@@ -1,12 +1,12 @@
 import React from "react";
-import { Practice } from "./screens";
 import { Header } from "./components";
+import { Home } from "./screens";
 
 export const App = () => {
   return (
     <div className="main">
       <Header/>
-    <Practice/>
+      <Home/>
     </div>
   );
 };
