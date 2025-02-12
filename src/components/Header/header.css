@@ -12,16 +12,16 @@
   width: clamp(2.5rem, 10vw, 3rem);
   height: auto;
   max-width: 100%;
-  margin-left: 64px;
+  margin-left: clamp(24px, 5vw, 62px); 
 }
 .primary-navigation{
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  padding-right: clamp(24px, 5vw, 62px);
 }
 nav {
   height:inherit;
-  width: 51%;
-  /* width: 46rem; */
+  width: 46rem;
   background-color: rgba(255, 255, 255, 0.05);
   /* backdrop-filter: blur(10px); */
   backdrop-filter: url(filters.svg#filter) blur(30px) saturate(100%);
@@ -29,6 +29,7 @@ nav {
 .nav-text {
   font-family: var(--font-secondary);
   font-size: var(--font-size-8);
+  font-weight: 300;
   line-height: var(--line-height-8);
   letter-spacing: var(--letter-spacing-8);
   color: var(--color-white);
@@ -44,7 +45,7 @@ nav {
   display: flex;
   align-items: center;
   height: 6rem;
-  gap: 13px;
+  gap: 10px;
   box-shadow: inset 0 -2.5px 0 transparent; /* Default: invisible */
   transition: box-shadow 0.2s ease-in-out;
 
@@ -63,6 +64,7 @@ nav {
 }
 .nav-list li::before {
   content: counter(count, decimal-leading-zero);
-  font-weight: bold;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
