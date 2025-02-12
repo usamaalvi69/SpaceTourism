@@ -8,13 +8,13 @@ body {
 
 
 /* margin-top: 418px; 128px + 292px(inner)  */
-.container {
+.home-container {
     display: flex;
     justify-content: center;
     /* background-color: var(--color-white-50); */
 }
 
-.wrapper {
+.home-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ body {
     margin-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
 }
 
-.practice-content {
+.home-content {
     display: flex;
     flex-direction: column;
     max-width: 480px;
@@ -31,7 +31,7 @@ body {
 
 }
 
-.practice-content h1 {
+.home-content h1 {
     font-family: var(--font-primary);
     font-size: clamp(5rem, min(15vw, 15vh), var(--font-size-1));
     line-height: var(--line-height-1);
@@ -42,7 +42,7 @@ body {
     /* background-color: var(--color-white-17); */
 }
 
-.practice-content h5 {
+.home-content h5 {
     font-family: var(--font-secondary);
     font-size: clamp(1.4rem, max(6vw, 6vh), var(--font-size-5));
     line-height: var(--line-height-5);
@@ -64,7 +64,7 @@ body {
 }
 
 
-.practice-btn {
+.home-btn {
     justify-content: center;
     align-items: center;
     padding-top: 5rem;
@@ -73,7 +73,7 @@ body {
     /* background-color: var(--color-white-25); */
 }
 
-.practice-explore {
+.home-explore {
     width: clamp(9rem, max(30vw, 30vh), 17rem);
     aspect-ratio: 1;
     font-size: clamp(1.2rem, max(5vw, 5vh), 2rem);
@@ -82,19 +82,19 @@ body {
 }
 
 @media (max-width: 80em) {
-    .wrapper {
+    .home-wrapper {
         flex-direction: column;
         /* padding-top: 8rem; */
     }
 
-    .practice-content {
+    .home-content {
         text-align: center;
         max-width: 500px;
         /* padding: 1rem; */
         /* min-width: 600px; */
     }
 
-    .practice-content h5 {
+    .home-content h5 {
         font-size: clamp(1.4rem, max(4vw, 4vh), var(--font-size-5));
     }
 

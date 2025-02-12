@@ -3,9 +3,9 @@ import "./home.css";
 export const Home = () => {
   return (
     // <div className="pratice-main">
-      <div className="container">
-        <div className="wrapper">
-          <div className="practice-content">
+      <div className="home-container">
+        <div className="home-wrapper">
+          <div className="home-content">
             <h5>SO, YOU WANT TO TRAVEL TO</h5>
             <h1>SPACE </h1>
             <p className="desc">
@@ -15,8 +15,8 @@ export const Home = () => {
               this world experience!
             </p>
           </div>
-          <div className="practice-btn">
-            <button className="practice-explore">EXPLORE</button>
+          <div className="home-btn">
+            <button className="home-explore">EXPLORE</button>
           </div>
         </div>
       </div>
