@@ -6,12 +6,11 @@ body {
     background-size: cover;
 }
 
-
 /* margin-top: 418px; 128px + 292px(inner)  */
 .home-container {
     display: flex;
     justify-content: center;
-    /* background-color: var(--color-white-50); */
+    margin-top: clamp(1.8rem, max(5vw, 5vh), 8rem);
 }
 
 .home-wrapper {
@@ -21,6 +20,7 @@ body {
     width: 75%;
     padding-top: clamp(1.8rem, max(6vw, 6vh), 18.25rem);
     margin-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
+    /* background-color: var(--color-white-50); */
 }
 
 .home-content {
@@ -82,6 +82,9 @@ body {
 }
 
 @media (max-width: 80em) {
+    .home-container{
+        margin-top: 0;
+    }
     .home-wrapper {
         flex-direction: column;
         /* padding-top: 8rem; */

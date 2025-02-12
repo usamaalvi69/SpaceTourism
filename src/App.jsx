@@ -1,12 +1,18 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Header } from "./components";
-import { Home } from "./screens";
+import { Crew, Destinations, Home, Technology } from "./screens";
 
 export const App = () => {
   return (
-    <div className="main">
-      <Header/>
-      <Home/>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/destinations" element={<Destinations />} />
+        <Route path="/crew" element={<Crew />} />
+        <Route path="/technology" element={<Technology />} />
+      </Routes>
+    </Router>
   );
 };

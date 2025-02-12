@@ -7,13 +7,21 @@ export const Header = () => {
   return (
     <div className="nav-header">
       <img src={logo} alt="Logo" className="logo" />
-      <nav class="primary-navigation" id="primary-navigation">
-      <ul aria-label="Primary" role="list" class="nav-list nav-text">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">DESTINATIONS</a></li>
-            <li><a href="#">CREW</a></li>
-            <li><a href="#">TECHNOLOGY</a></li>
-          </ul>
+      <nav className="primary-navigation" id="primary-navigation">
+        <ul aria-label="Primary" role="list" className="nav-list nav-text">
+          <NavLink to="/" className="nav-item">
+            <li>HOME</li>
+          </NavLink>
+          <NavLink to="/destinations" className="nav-item">
+            <li>DESTINATIONS</li>
+          </NavLink>
+          <NavLink to="/crew" className="nav-item">
+            <li>CREW</li>
+          </NavLink>
+          <NavLink to="/technology" className="nav-item">
+            <li>TECHNOLOGY</li>
+          </NavLink>
+        </ul>
       </nav>
     </div>
   );
