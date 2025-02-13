@@ -14,46 +14,16 @@
     width: 75%;
     padding-top: clamp(1.8rem, max(6vw, 6vh), 18.25rem);
     margin-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
-    /* background-color: var(--color-white-50); */
 }
 
 .home-content {
     display: flex;
     flex-direction: column;
     max-width: 480px;
-    /* background-color: var(--color-white-50); */
-
-}
-
-.home-content h1 {
-    font-family: var(--font-primary);
-    font-size: clamp(5rem, min(15vw, 15vh), var(--font-size-1));
-    line-height: var(--line-height-1);
-    letter-spacing: var(--letter-spacing-1);
-    color: var(--color-white);
-    overflow: hidden;
-    /* background-color: var(--color-white-17); */
 }
 
 .home-content h5 {
-    font-family: var(--font-secondary);
     font-size: clamp(1.4rem, min(5vw, 5vh), var(--font-size-5));
-    line-height: var(--line-height-5);
-    letter-spacing: var(--letter-spacing-5);
-    color: var(--color-blue-300);
-}
-
-.desc {
-    font-family: var(--font-tertiary);
-    font-size: clamp(1rem, min(2vh, 2vw), 1.5rem);
-    letter-spacing: var(--letter-spacing-9);
-    color: var(--color-blue-300);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    text-align: justify;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .home-explore {
@@ -68,8 +38,8 @@
 
 .home-explore:hover,
 .home-explore:focus {
-  cursor: pointer;
-  box-shadow: 0 0 0 clamp(3rem, max(5vw, 5vh), 5rem) var(--color-white-15);
+    cursor: pointer;
+    box-shadow: 0 0 0 clamp(3rem, max(5vw, 5vh), 5rem) var(--color-white-15);
 }
 
 @media (max-width: 80em) {

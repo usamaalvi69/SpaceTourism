@@ -16,7 +16,7 @@
   --color-white-25: hsla(0, 0%, 100%, 0.25);
   /* 25% opacity */
   --color-white-15: hsla(0, 0%, 100%, 0.15);
-    /* 15% opacity */
+  /* 15% opacity */
   --color-white-17: hsla(0, 0%, 100%, 0.1744);
   /* 17.44% opacity */
 
@@ -78,7 +78,6 @@
 
   /* nav list selection border width */
   --selected-nav-border: -3px
-
 }
 
 body {
@@ -88,22 +87,24 @@ body {
   color: var(--color-white);
   background-color: var(--color-blue-900);
 }
+
 @media (max-width: 18.75em) {
   body {
-      position: fixed;
-      color: red;
-      width: 100%;
-      height: 100%;
+    position: fixed;
+    color: red;
+    width: 100%;
+    height: 100%;
   }
 }
 
 .text-preset-1 {
   font-family: var(--font-primary);
-  font-size: var(--font-size-1);
+  font-size: clamp(5rem, min(15vw, 15vh), var(--font-size-1));
   line-height: var(--line-height-1);
   letter-spacing: var(--letter-spacing-1);
   color: var(--color-white);
-  /* background-color: var(--color-white-17); */
+  overflow: hidden;
+  margin-bottom: -1rem;
 }
 
 .text-preset-2 {
@@ -162,10 +163,15 @@ body {
 
 .text-preset-9 {
   font-family: var(--font-tertiary);
-  font-size: var(--font-size-9);
-  line-height: var(--line-height-9);
+  font-size: clamp(1rem, min(2vh, 2vw), 1.5rem);
   letter-spacing: var(--letter-spacing-9);
   color: var(--color-blue-300);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .fade-in {
@@ -173,10 +179,12 @@ body {
   animation-duration: .25s;
   animation-timing-function: ease-in-out;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }

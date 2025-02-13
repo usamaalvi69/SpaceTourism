@@ -35,8 +35,8 @@ export const Destinations = () => {
           />
 
           <section className="details">
-            <h1>{name.toUpperCase()}</h1>
-            <p className="planet-desc">{description}</p>
+            <h1 className="text-preset-1">{name.toUpperCase()}</h1>
+            <p className="planet-desc text-preset-9">{description}</p>
             <hr />
             <div className="sub-details">
               <Info label={"AVG. DISTANCE"} value={distance.toUpperCase()} />

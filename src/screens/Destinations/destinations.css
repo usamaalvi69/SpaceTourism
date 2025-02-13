@@ -58,27 +58,7 @@
 }
 
 .details h1 {
-    font-family: var(--font-primary);
-    font-size: clamp(5rem, min(15vw, 15vh), 7rem);
-    line-height: var(--line-height-1);
-    letter-spacing: var(--letter-spacing-1);
-    color: var(--color-white);
-    overflow: hidden;
-    margin-bottom: -1rem;
-}
-
-.planet-desc {
-    font-family: var(--font-tertiary);
-    font-size: clamp(1rem, min(2vh, 2vw), 1.5rem);
-    letter-spacing: var(--letter-spacing-9);
-    color: var(--color-blue-300);
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 5;
-    text-align: left;
-    /* Justify removed for better clamping */
-    overflow: hidden;
-    text-overflow: ellipsis;
+    font-size: clamp(4rem, min(15vw, 15vh), 6.5rem);
 }
 
 hr {
@@ -159,6 +139,5 @@ hr {
         width: 100%;
         text-align: center;
         padding-top: 2vh;
-        /* Changed for flexibility */
     }
 }
