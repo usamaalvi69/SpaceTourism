@@ -3,7 +3,7 @@
 .destination-container {
     display: flex;
     width: 75%;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-inline: auto;
     padding-top: clamp(1.8rem, max(6vw, 6vh), 18.25rem);
     padding-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
@@ -18,7 +18,7 @@
 }
 
 .planet {
-    width: clamp(9.375rem, max(30vw, 30vh), 30rem);
+    width: clamp(9.375rem, max(32vw, 32vh), 32rem);
     height: auto;
     object-fit: contain;
 }
@@ -32,7 +32,7 @@
 }
 
 .des-details {
-    width: 50%;
+    width: 40%;
 }
 
 .tabs {
@@ -44,7 +44,7 @@
 
 .tabs li {
     padding-bottom: 10px;
-    transition: border-bottom 0.3s ease-in-out;
+    /* transition: border-bottom 0.3s ease-in-out; */
 }
 
 .tabs li:hover,

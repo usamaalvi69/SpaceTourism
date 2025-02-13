@@ -35,7 +35,7 @@ export const Header = () => {
           className="menu"
           onClick={toggleSidebar}
         />
-        <nav className="primary-navigation" id="primary-navigation">
+        <nav className="primary-navigation fade-in" id="primary-navigation">
           <ul aria-label="Primary" role="list" className="nav-list nav-text">
             <NavLink to="/" className="nav-item">
               <li>HOME</li>

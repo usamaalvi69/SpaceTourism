@@ -4,7 +4,6 @@ import useBackground from "../../hooks/useBackground";
 import { data } from "../../data";
 import { DestinationTabs } from "../../components";
 
-
 export const Destinations = () => {
   const destinations = data["destinations"];
   const [activeTabData, setActiveTabData] = useState(destinations[0]);
@@ -23,7 +22,10 @@ export const Destinations = () => {
         <span>01</span>PICK YOUR DESTINATION
       </h5>
       <div className="destination-container">
-        <img src={png} alt="destination image" className="planet" />
+        <picture className="fade-in">
+          <source srcSet={webp} type="image/webp" />
+          <img src={png} alt="destination image" className="planet" />
+        </picture>
 
         <div className="des-details">
           <DestinationTabs
