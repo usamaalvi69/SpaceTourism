@@ -5,20 +5,30 @@ import "./header.css";
 import logo from "../../assets/shared/logo.svg";
 import close from "../../assets/shared/icon-close.svg";
 import menu from "../../assets/shared/icon-hamburger.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
   };
+
+  const goto = () => {
+    navigate("/");
+  };
   return (
     <>
       <div className="nav-header">
-        <NavLink to="/">
-          <img src={logo} alt="Logo" className="logo" />
-        </NavLink>
+        <img
+          src={logo}
+          alt="Logo"
+          className="logo"
+          onClick={goto}
+          tabindex="0"
+        />
+
         <img
           src={isSidebarOpen ? close : menu}
           alt="Menu"
@@ -43,7 +53,6 @@ export const Header = () => {
         </nav>
       </div>
       <div className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
-      
         <nav className="sidebar-navigation" id="sidebar-navigation">
           <ul
             aria-label="Secondary"

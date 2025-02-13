@@ -33,6 +33,12 @@
   max-width: 100%;
   margin-left: clamp(24px, 5vw, 62px); 
 }
+
+.logo:hover,
+.logo:focus {
+  cursor: pointer;
+}
+
 .primary-navigation{
   display: flex;
   justify-content: flex-end;

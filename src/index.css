@@ -15,6 +15,8 @@
   /* 50.42% opacity */
   --color-white-25: hsla(0, 0%, 100%, 0.25);
   /* 25% opacity */
+  --color-white-15: hsla(0, 0%, 100%, 0.15);
+    /* 15% opacity */
   --color-white-17: hsla(0, 0%, 100%, 0.1744);
   /* 17.44% opacity */
 

@@ -1,10 +1,15 @@
 import React from "react";
 import "./home.css";
 import useBackground from "../../hooks/useBackground";
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
   useBackground("home");
-  
+  const navigate = useNavigate();
+
+  const goto = () => {
+    navigate('/destinations');
+  };
   return (
     <div className="home-container">
       <div className="home-wrapper">
@@ -18,9 +23,8 @@ export const Home = () => {
             world experience!
           </p>
         </div>
-        <div className="home-btn">
-          <button className="home-explore">EXPLORE</button>
-        </div>
+
+        <button className="home-explore" onClick={goto}>EXPLORE</button>
       </div>
     </div>
   );
