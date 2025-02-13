@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./sidebar.css";
 import "./header.css";
 
-import logo from "../../assets/shared/logo.svg";
-import close from "../../assets/shared/icon-close.svg";
-import menu from "../../assets/shared/icon-hamburger.svg";
+const logo = "/assets/shared/logo.svg";
+const close = "/assets/shared/icon-close.svg";
+const menu = "/assets/shared/icon-hamburger.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export const Header = () => {
@@ -26,7 +26,7 @@ export const Header = () => {
           alt="Logo"
           className="logo"
           onClick={goto}
-          tabindex="0"
+          tabIndex="0"
         />
 
         <img
@@ -58,18 +58,29 @@ export const Header = () => {
             aria-label="Secondary"
             role="list"
             className="side-nav-list nav-text"
-            
           >
             <NavLink to="/" className="side-nav-item" onClick={toggleSidebar}>
               <li>HOME</li>
             </NavLink>
-            <NavLink to="/destinations" className="side-nav-item" onClick={toggleSidebar}>
+            <NavLink
+              to="/destinations"
+              className="side-nav-item"
+              onClick={toggleSidebar}
+            >
               <li>DESTINATIONS</li>
             </NavLink>
-            <NavLink to="/crew" className="side-nav-item" onClick={toggleSidebar}>
+            <NavLink
+              to="/crew"
+              className="side-nav-item"
+              onClick={toggleSidebar}
+            >
               <li>CREW</li>
             </NavLink>
-            <NavLink to="/technology" className="side-nav-item" onClick={toggleSidebar}>
+            <NavLink
+              to="/technology"
+              className="side-nav-item"
+              onClick={toggleSidebar}
+            >
               <li>TECHNOLOGY</li>
             </NavLink>
           </ul>

@@ -1,22 +1,22 @@
 import { useEffect } from "react";
 
 // Desktop backgrounds
-import bgHome from "../assets/home/background-home-desktop.jpg";
-import bgDest from "../assets/destination/background-destination-desktop.jpg";
-import bgCrew from "../assets/crew/background-crew-desktop.jpg";
-import bgTech from "../assets/technology/background-technology-desktop.jpg";
+const bgHome = "/assets/home/background-home-desktop.jpg";
+const bgDest = "/assets/destination/background-destination-desktop.jpg";
+const bgCrew = "/assets/crew/background-crew-desktop.jpg";
+const bgTech = "/assets/technology/background-technology-desktop.jpg";
 
 // Tablet backgrounds
-import bgHomeTab from "../assets/home/background-home-tablet.jpg";
-import bgDestTab from "../assets/destination/background-destination-tablet.jpg";
-import bgCrewTab from "../assets/crew/background-crew-tablet.jpg";
-import bgTechTab from "../assets/technology/background-technology-tablet.jpg";
+const bgHomeTab = "/assets/home/background-home-tablet.jpg";
+const bgDestTab = "/assets/destination/background-destination-tablet.jpg";
+const bgCrewTab = "/assets/crew/background-crew-tablet.jpg";
+const bgTechTab = "/assets/technology/background-technology-tablet.jpg";
 
 // Mobile backgrounds
-import bgHomeMob from "../assets/home/background-home-mobile.jpg";
-import bgDestMob from "../assets/destination/background-destination-mobile.jpg";
-import bgCrewMob from "../assets/crew/background-crew-mobile.jpg";
-import bgTechMob from "../assets/technology/background-technology-mobile.jpg";
+const bgHomeMob = "/assets/home/background-home-mobile.jpg";
+const bgDestMob = "/assets/destination/background-destination-mobile.jpg";
+const bgCrewMob = "/assets/crew/background-crew-mobile.jpg";
+const bgTechMob = "/assets/technology/background-technology-mobile.jpg";
 
 // Background mapping for different screen sizes
 const backgrounds = {

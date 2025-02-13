@@ -1,14 +1,12 @@
 /* destinations.css */
 
-
 .destination-container {
     display: flex;
-    width: 65%;
+    width: 75%;
     justify-content: space-between;
     margin-inline: auto;
     padding-top: clamp(1.8rem, max(6vw, 6vh), 18.25rem);
     padding-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
-    /* background-color:wheat; */
 }
 
 .destination-main h5 {
@@ -17,7 +15,6 @@
     color: var(--color-white);
     font-weight: 300;
     padding-top: 3rem;
-    /* background-color:wheat; */
 }
 
 .planet {
@@ -35,30 +32,39 @@
 }
 
 .des-details {
-    width: 40%;
-    /* background-color:chocolate; */
+    width: 50%;
 }
 
 .tabs {
     display: flex;
     list-style: none;
     font-weight: 300;
-    gap: 2rem;
+    gap: 2.5rem;
 }
 
 .tabs li {
-    border-bottom: 2.5px solid var(--color-white);
     padding-bottom: 10px;
+    transition: border-bottom 0.3s ease-in-out;
 }
 
+.tabs li:hover,
+.tabs li:focus {
+    cursor: pointer;
+    border-bottom: 2.5px solid var(--color-white-50);
+}
+
+.tabs li.active {
+    border-bottom: 2.5px solid var(--color-white);
+}
 
 .details h1 {
     font-family: var(--font-primary);
-    font-size: clamp(5rem, min(15vw, 15vh), var(--font-size-1));
+    font-size: clamp(5rem, min(15vw, 15vh), 7rem);
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     color: var(--color-white);
     overflow: hidden;
+    margin-bottom: -1rem;
 }
 
 .planet-desc {
@@ -69,7 +75,8 @@
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
-    text-align: justify;
+    text-align: left;
+    /* Justify removed for better clamping */
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -96,34 +103,41 @@ hr {
         flex-direction: column;
         align-items: center;
     }
+
     .details h1 {
         text-align: center;
     }
+
     .des-details {
         width: 60%;
         margin-top: 5rem;
     }
+
     .planet-desc {
         text-align: center;
     }
+
     .sub-details {
         justify-content: center;
-        gap: 3rem
+        gap: 3rem;
     }
+
     .sub-details div {
         text-align: center;
     }
-    .sub-details h3{
+
+    .sub-details h3 {
         font-size: clamp(1.2rem, min(4vw, 4vh), var(--font-size-3));
     }
-    .tabs{
+
+    .tabs {
         justify-content: center;
     }
+
     .destination-main h5 {
         width: 80%;
         font-size: clamp(1.2rem, min(4vw, 4vh), var(--font-size-5));
     }
- 
 }
 
 @media (max-width: 30em) {
@@ -131,19 +145,20 @@ hr {
         width: 85%;
         margin-top: 2.5rem;
     }
+
     .sub-details {
         flex-wrap: wrap;
-        gap: 1.5rem
+        gap: 1.5rem;
     }
+
     .sub-details h3 {
         font-size: 1.8rem;
     }
+
     .destination-main h5 {
-        width: 100;
+        width: 100%;
         text-align: center;
-        padding-top: 1rem;
+        padding-top: 2vh;
+        /* Changed for flexibility */
     }
 }
-
-
-
