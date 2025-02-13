@@ -1,1 +1,149 @@
 /* destinations.css */
+
+
+.destination-container {
+    display: flex;
+    width: 65%;
+    justify-content: space-between;
+    margin-inline: auto;
+    padding-top: clamp(1.8rem, max(6vw, 6vh), 18.25rem);
+    padding-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
+    /* background-color:wheat; */
+}
+
+.destination-main h5 {
+    width: 75%;
+    margin-inline: auto;
+    color: var(--color-white);
+    font-weight: 300;
+    padding-top: 3rem;
+    /* background-color:wheat; */
+}
+
+.planet {
+    width: clamp(9.375rem, max(30vw, 30vh), 30rem);
+    height: auto;
+    object-fit: contain;
+}
+
+.destination-main span {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--color-white-25);
+    margin-right: 1rem;
+}
+
+.des-details {
+    width: 40%;
+    /* background-color:chocolate; */
+}
+
+.tabs {
+    display: flex;
+    list-style: none;
+    font-weight: 300;
+    gap: 2rem;
+}
+
+.tabs li {
+    border-bottom: 2.5px solid var(--color-white);
+    padding-bottom: 10px;
+}
+
+
+.details h1 {
+    font-family: var(--font-primary);
+    font-size: clamp(5rem, min(15vw, 15vh), var(--font-size-1));
+    line-height: var(--line-height-1);
+    letter-spacing: var(--letter-spacing-1);
+    color: var(--color-white);
+    overflow: hidden;
+}
+
+.planet-desc {
+    font-family: var(--font-tertiary);
+    font-size: clamp(1rem, min(2vh, 2vw), 1.5rem);
+    letter-spacing: var(--letter-spacing-9);
+    color: var(--color-blue-300);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-white-25);
+    margin: 2rem 0;
+}
+
+.sub-details {
+    display: flex;
+    gap: 5.5rem;
+}
+
+.sub-details h6 {
+    margin-bottom: 0.6rem;
+}
+
+@media (max-width: 80em) {
+    .destination-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .details h1 {
+        text-align: center;
+    }
+    .des-details {
+        width: 60%;
+        margin-top: 5rem;
+    }
+    .planet-desc {
+        text-align: center;
+    }
+    .sub-details {
+        justify-content: center;
+        gap: 3rem
+    }
+    .sub-details div {
+        text-align: center;
+    }
+    .sub-details h3{
+        font-size: clamp(1.2rem, min(4vw, 4vh), var(--font-size-3));
+    }
+    .tabs{
+        justify-content: center;
+    }
+    .destination-main h5 {
+        width: 80%;
+        font-size: clamp(1.2rem, min(4vw, 4vh), var(--font-size-5));
+    }
+ 
+}
+
+@media (max-width: 30em) {
+    .des-details {
+        width: 85%;
+        margin-top: 2.5rem;
+    }
+    .sub-details {
+        flex-wrap: wrap;
+        gap: 1.5rem
+    }
+    .sub-details h3 {
+        font-size: 1.8rem;
+    }
+    .destination-main h5 {
+        width: 100;
+        text-align: center;
+        padding-top: 1rem;
+    }
+}
+
+
+

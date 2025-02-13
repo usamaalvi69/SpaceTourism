@@ -58,18 +58,18 @@ export const Header = () => {
             aria-label="Secondary"
             role="list"
             className="side-nav-list nav-text"
-            // onClick={toggleSidebar}
+            
           >
-            <NavLink to="/" className="side-nav-item">
+            <NavLink to="/" className="side-nav-item" onClick={toggleSidebar}>
               <li>HOME</li>
             </NavLink>
-            <NavLink to="/destinations" className="side-nav-item">
+            <NavLink to="/destinations" className="side-nav-item" onClick={toggleSidebar}>
               <li>DESTINATIONS</li>
             </NavLink>
-            <NavLink to="/crew" className="side-nav-item">
+            <NavLink to="/crew" className="side-nav-item" onClick={toggleSidebar}>
               <li>CREW</li>
             </NavLink>
-            <NavLink to="/technology" className="side-nav-item">
+            <NavLink to="/technology" className="side-nav-item" onClick={toggleSidebar}>
               <li>TECHNOLOGY</li>
             </NavLink>
           </ul>

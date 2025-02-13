@@ -31,7 +31,6 @@
     line-height: var(--line-height-1);
     letter-spacing: var(--letter-spacing-1);
     color: var(--color-white);
-    /* max-width: 90%; */
     overflow: hidden;
     /* background-color: var(--color-white-17); */
 }
