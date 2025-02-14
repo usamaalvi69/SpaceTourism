@@ -106,7 +106,7 @@ hr {
         text-align: center;
     }
 
-    .sub-details h3 {
+    .sub-details h4 {
         font-size: clamp(1.2rem, min(4vw, 4vh), var(--font-size-3));
     }
 
@@ -131,7 +131,7 @@ hr {
         gap: 1.5rem;
     }
 
-    .sub-details h3 {
+    .sub-details h4 {
         font-size: 1.8rem;
     }
 

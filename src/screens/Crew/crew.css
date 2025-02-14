@@ -1,0 +1,162 @@
+/* crew.css */
+
+.crew-container {
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    margin-inline: auto;
+    padding-top: clamp(1.8rem, min(6vw, 6vh), 18.25rem);
+    padding-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
+    /* position: relative; */
+}
+
+.crew-details {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
+.crew-details h5 {
+    color: var(--color-white);
+    font-weight: 300;
+}
+
+.details {
+    height: 35%;
+}
+
+.crew-img {
+    width: clamp(9.375rem, max(32vw, 32vh), 32rem);
+    height: auto;
+    object-fit: contain;
+}
+.mask-effect {
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 8%)
+}
+.crew-container picture {
+    display: flex;
+    align-items: flex-end;
+}
+
+.crew-main span {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--color-white-25);
+    margin-right: 1rem;
+}
+
+.dots {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.dots li {
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: var(--color-white-17);
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.dots li:hover,
+.dots li:focus {
+    cursor: pointer;
+    background-color: var(--color-white-50);
+}
+
+.dots li.active {
+    background-color: var(--color-white);
+}
+
+.details h2 {
+    font-size: clamp(2rem, max(3.5vw, 3.5vh), 3.5rem);
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.details h3 {
+    font-size: clamp(1rem, max(3vw, 3vh), 2rem);
+    line-height: 4rem;
+}
+
+.crew-desc {
+    font-size: clamp(1rem, min(2.5vh, 2.5vw), 1.3rem);
+    line-height: 2rem;
+}
+
+
+
+@media (max-width: 80em) {
+    .crew-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .crew-details {
+        width: 90%;
+        height: unset;
+    }
+
+    .details {
+        display: flex;
+        height: unset;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        margin-inline: auto;
+        text-align: center;
+        min-height: 30vh;
+        width: 70%;
+    }
+
+    .crew-desc {
+        text-align: center;
+
+    }
+
+    .dots {
+        justify-content: center;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .dots li {
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}
+
+@media (max-width: 30em) {
+
+    .details {
+        width: 98%;
+        margin-bottom: 2.5rem;
+    }
+
+    .crew-details h5 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .details h2 {
+        font-size: 1.8rem;
+        line-height: unset;
+    }
+
+    .details h3 {
+        font-size: 1.3rem;
+        margin-bottom: -0.5rem;
+    }
+
+
+}

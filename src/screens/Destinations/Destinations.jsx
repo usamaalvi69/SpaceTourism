@@ -53,7 +53,7 @@ const Info = ({ label, value }) => {
   return (
     <div>
       <h6 className="text-preset-7">{label}</h6>
-      <h3 className="text-preset-6">{value}</h3>
+      <h4 className="text-preset-6">{value}</h4>
     </div>
   );
 };
