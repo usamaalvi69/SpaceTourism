@@ -22,7 +22,7 @@ export const Crew = () => {
           <h5 className="text-preset-5">
             <span>02</span>MEET YOUR CREW
           </h5>
-          <section className="details">
+          <section className="section-details">
             <h3 className="text-preset-4">{role.toUpperCase()}</h3>
             <h2 className="text-preset-3">{name.toUpperCase()}</h2>
             <p className="crew-desc text-preset-9">{bio}</p>

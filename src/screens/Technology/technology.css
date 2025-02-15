@@ -1,0 +1,134 @@
+.pg-title {
+    margin: 5% 0 2% 16%;
+}
+
+.technology-container {
+    display: flex;
+    width: 85%;
+    justify-content: space-around;
+    margin-left: auto;
+    padding-top: clamp(1.8rem, min(6vw, 6vh), 18.25rem);
+    padding-bottom: clamp(1.8rem, max(5vw, 5vh), 8rem);
+}
+
+.technology-details {
+    display: flex;
+    width: 55%;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.technology-details h5 {
+    color: var(--color-white);
+    font-weight: 300;
+}
+
+.technology-img {
+    max-width: 100%;
+}
+
+.technology-container picture {
+    display: flex;
+    width: 40%;
+    justify-content: flex-end;
+}
+
+.technology-main span {
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--color-white-25);
+    margin-right: 1rem;
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    list-style: none;
+    justify-content: flex-start;
+    padding-bottom: 1rem;
+}
+
+.pages li {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: solid;
+    border-color: var(--color-white-17);
+}
+
+.pages li:hover,
+.pages li:focus {
+    cursor: pointer;
+    border-color: var(--color-white);
+}
+
+.pages li.active {
+    background-color: var(--color-white);
+    color: var(--color-blue-900);
+}
+
+.tech-details h2 {
+    font-size: clamp(2rem, max(3.5vw, 3.5vh), 3.5rem);
+    line-height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.tech-details h3 {
+    font-size: clamp(1rem, max(3vw, 3vh), 2rem);
+    line-height: 4rem;
+}
+
+.technology-desc {
+    font-size: clamp(1rem, min(2.5vh, 2.5vw), 1.3rem);
+    line-height: 2rem;
+}
+
+
+
+@media (max-width: 80em) {
+    .technology-container {
+        width: 100%;
+        flex-direction: column;
+        margin-inline: auto;
+    }
+
+    .technology-details {
+        order: 2;
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+        margin-inline: auto;
+    }
+
+    .technology-desc {
+        text-align: center;
+    }
+
+    .pages {
+        flex-direction: row;
+        margin-bottom: -3rem;
+    }
+
+    .technology-container picture {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .technology-container picture img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
