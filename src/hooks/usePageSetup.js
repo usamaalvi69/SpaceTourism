@@ -24,7 +24,6 @@ const backgrounds = {
   },
 };
 
-
 const titles = {
   "/": "Home | Space Tourism",
   "/destinations": "Destinations | Space Tourism",
@@ -46,28 +45,24 @@ const usePageSetup = () => {
   const route = location.pathname.replace("/", "") || "home"; // Extracts the route name
 
   useEffect(() => {
-    // Set document title
     document.title = titles[location.pathname] || "Space Tourism";
 
-    // Set background
-    if (typeof window !== "undefined") {
-      const updateBackground = () => {
-        const bgImage = getBackground(route);
-        if (bgImage) {
-          document.body.style.background = `hsl(230, 35%, 7%) url(${bgImage}) no-repeat center center fixed`;
-          document.body.style.backgroundSize = "cover";
-        }
-      };
+    const updateBackground = () => {
+      const bgImage = getBackground(route);
+      const bgContainer = document.getElementById("bg-container");
+      
+      if (bgContainer && bgImage) {
+        bgContainer.style.backgroundImage = `url(${bgImage})`;
+      }
+    };
 
-      updateBackground();
-      window.addEventListener("resize", updateBackground);
+    updateBackground();
+    window.addEventListener("resize", updateBackground);
 
-      return () => {
-        document.body.style.background = "";
-        window.removeEventListener("resize", updateBackground);
-      };
-    }
-  }, [location.pathname]); 
+    return () => {
+      window.removeEventListener("resize", updateBackground);
+    };
+  }, [location.pathname]);
 
   return null;
 };

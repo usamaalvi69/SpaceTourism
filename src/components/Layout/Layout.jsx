@@ -4,11 +4,13 @@ import { Header } from "..";
 import usePageSetup from "../../hooks/usePageSetup";
 
 export const Layout = () => {
-  usePageSetup()
+  usePageSetup();
   return (
     <>
-      <Header />
-      <Outlet /> 
+      <div id="bg-container" className="bg-container">
+        <Header />
+        <Outlet />
+      </div>
     </>
   );
 };
