@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./sidebar.css";
 import "./header.css";
 
-const logo = "/assets/shared/logo.svg";
-const close = "/assets/shared/icon-close.svg";
-const menu = "/assets/shared/icon-hamburger.svg";
+const logo = "/SpaceTourism/assets/shared/logo.svg";
+const close = "/SpaceTourism/assets/shared/icon-close.svg";
+const menu = "/SpaceTourism/assets/shared/icon-hamburger.svg";
 import { NavLink, useNavigate } from "react-router-dom";
 
 export const Header = () => {
