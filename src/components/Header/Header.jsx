@@ -38,7 +38,7 @@ export const Header = () => {
         <nav className="primary-navigation fade-in" id="primary-navigation">
           <ul aria-label="Primary" role="list" className="nav-list nav-text">
             <NavLink to="/" className="nav-item">
-              <li>HOMET</li>
+              <li>HOME</li>
             </NavLink>
             <NavLink to="/destinations" className="nav-item">
               <li>DESTINATIONS</li>
