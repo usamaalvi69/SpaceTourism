@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./technology.css";
-import useBackground from "../../hooks/useBackground";
 import { data } from "../../data";
 import { Pagination } from "../../components";
 
 export const Technology = () => {
   const technology = data["technology"].map((_, i) => ({ id: i + 1, ..._ }));
   const [activeTabData, setActiveTabData] = useState(technology[0]);
-  useBackground("technology");
   const {
     id,
     name,

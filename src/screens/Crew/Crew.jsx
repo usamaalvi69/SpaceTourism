@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./crew.css";
-import useBackground from "../../hooks/useBackground";
 import { data } from "../../data";
 import { Dots } from "../../components";
 
 export const Crew = () => {
   const crew = data["crew"];
   const [activeTabData, setActiveTabData] = useState(crew[0]);
-  useBackground("crew");
   const {
     name,
     role,

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "./destinations.css";
-import useBackground from "../../hooks/useBackground";
 import { data } from "../../data";
 import { DestinationTabs } from "../../components";
 
 export const Destinations = () => {
   const destinations = data["destinations"];
   const [activeTabData, setActiveTabData] = useState(destinations[0]);
-  useBackground("destinations");
   const {
     name,
     distance,

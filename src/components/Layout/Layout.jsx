@@ -1,11 +1,10 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import { Header } from "..";
-import useDocumentTitle from "../../hooks/useDocumentTitle";
+import usePageSetup from "../../hooks/usePageSetup";
 
 export const Layout = () => {
-  useDocumentTitle();
-
+  usePageSetup()
   return (
     <>
       <Header />
