@@ -7,10 +7,8 @@ export const Layout = () => {
   usePageSetup();
   return (
     <>
-      <div id="bg-container" className="bg-container">
         <Header />
         <Outlet />
-      </div>
     </>
   );
 };

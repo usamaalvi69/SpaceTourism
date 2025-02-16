@@ -81,12 +81,13 @@
 }
 
 body {
-  /* height: 100vh; */
+  height: 100vh;  /* Ensures body takes full height */
   font-size: var(--font-size-4);
   font-family: var(--font-primary);
   color: var(--color-white);
-  /* background-color: var(--color-blue-900); */
+  background-color: var(--color-blue-900);
 }
+
 
 @media (max-width: 18.75em) {
   body {
@@ -96,7 +97,7 @@ body {
     height: 100%;
   }
 }
-#bg-container {
+/* #bg-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -106,8 +107,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* z-index: -1;  */
-}
+} */
 
 .text-preset-1 {
   font-family: var(--font-primary);

@@ -49,10 +49,11 @@ const usePageSetup = () => {
 
     const updateBackground = () => {
       const bgImage = getBackground(route);
-      const bgContainer = document.getElementById("bg-container");
-      
-      if (bgContainer && bgImage) {
-        bgContainer.style.backgroundImage = `url(${bgImage})`;
+      if (bgImage) {
+        document.body.style.backgroundImage = `url(${bgImage})`;
+        document.body.style.backgroundSize = "cover";
+        document.body.style.backgroundRepeat = "no-repeat";
+        document.body.style.backgroundPosition = "center";
       }
     };
 
@@ -61,6 +62,7 @@ const usePageSetup = () => {
 
     return () => {
       window.removeEventListener("resize", updateBackground);
+      document.body.style.backgroundImage = ""; // Reset on unmount
     };
   }, [location.pathname]);
 
